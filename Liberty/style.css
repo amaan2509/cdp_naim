@@ -1,0 +1,1424 @@
+* {
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+       text-decoration: none;
+       font-family: 'Roboto', sans-serif;
+}
+
+html {
+       scroll-behavior: smooth;
+}
+
+::selection {
+       background-color: rgb(116, 83, 252);
+       color: white;
+}
+
+.main {
+       background: url(/banner-bg.jpg) no-repeat center center/cover;
+       background-color: aquamarine;
+       height: 900px;
+       width: 100%;
+       padding-top: 30px;
+       padding: 30px 120px;
+
+}
+
+.navbar {
+       width: 100%;
+       margin: auto;
+       display: flex;
+       justify-content: space-between;
+       padding: 15px 20px;
+       background-color: white;
+       border-radius: 60px;
+       align-items: center;
+
+}
+
+.navbar .right ul {
+       display: flex;
+       margin-right: 5px;
+       display: inline-block;
+
+
+}
+
+.navbar .right ul li {
+       list-style: none;
+       display: inline-block;
+
+}
+
+.navbar .right ul li a {
+       color: black;
+       padding: 0px 20px;
+
+       border-radius: 20px;
+       margin: 0px 5px;
+       padding: 10px 20px;
+}
+
+.navbar .right .active {
+       background-color: rgb(116, 83, 252);
+       color: white;
+
+
+
+       /* border-radius: 20px; */
+       border: none;
+
+}
+
+
+.navbar .right ul li a:hover {
+       background-color: rgb(116, 83, 252);
+       color: white;
+
+       /* padding: 10px 20px; */
+       transition: all 0.3s;
+
+       border-radius: 20px;
+}
+
+.navbar .right i {
+       padding: 25px;
+       display: none;
+       color: rgb(116, 83, 252);
+}
+
+.section {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 135px;
+}
+
+.section .sectext {
+       width: 50%;
+       margin-top: 50px;
+
+}
+
+.section .sectext h3 {
+       color: white;
+       font-size: 25px;
+       margin-bottom: 20px;
+}
+
+.section .sectext h1 {
+       color: white;
+       font-size: 50px;
+       margin-bottom: 30px;
+}
+
+.section .sectext P {
+       color: white;
+       margin-bottom: 25px;
+       line-height: 30px;
+
+
+
+}
+
+button {
+       background-color: transparent;
+       padding: 10px 15px;
+       color: white;
+       border: 2px solid rgb(116, 83, 252);
+       border-radius: 50px;
+       font-size: 15px;
+       margin-right: 10px;
+       transition: all 0.3s;
+       padding: 13px 25px;
+
+
+}
+
+.section .sectext .active2 {
+       background-color: rgb(116, 83, 252);
+       color: white;
+       border: 2px solid rgb(116, 83, 252);
+
+
+       padding: 13px 25px;
+
+       border-radius: 30px;
+
+}
+
+.section .sectext .active2:hover {
+       color: rgb(116, 83, 252);
+       background-color: white;
+       border: 1px solid white;
+       transition: all 0.3s;
+
+}
+
+button:hover {
+       background-color: rgb(116, 83, 252);
+       color: white;
+
+
+       /* padding: 15px 25px; */
+
+       border-radius: 30px;
+
+}
+
+.secimg .image img {
+       height: 400px;
+}
+
+.secimg .imgbot {
+       text-align: center;
+       margin-top: 20px;
+}
+
+.secimg .imgbot i {
+       background-color: white;
+       font-size: 15px;
+       padding: 15px 20px;
+       border-radius: 50px;
+       color: rgb(116, 83, 252);
+       margin: 5px;
+}
+
+
+@media (max-width:1095px) {
+
+
+       .main {
+              background: url(/banner-bg.jpg) no-repeat center center/cover;
+              background-color: aquamarine;
+              height: 1700px;
+              width: 100%;
+              padding: 0px;
+
+              /* padding: 30px 120px; */
+
+       }
+
+       .navbar {
+              width: 100%;
+              margin: auto;
+              display: flex;
+              justify-content: space-between;
+              padding: 15px 20px;
+              background-color: white;
+              border-radius: 0px;
+              align-items: center;
+
+       }
+
+       .navbar .right ul {
+              display: flex;
+              margin-right: 5px;
+              display: none;
+
+
+       }
+
+       .navbar .right i {
+              padding: 25px;
+              display: inline;
+              font-size: 1.5rem;
+
+              color: rgb(116, 83, 252);
+       }
+
+       .section {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              margin-top: 75px;
+       }
+
+       .section .sectext {
+              width: 100%;
+              margin-top: 0px;
+              padding: 100px;
+
+       }
+
+       button {
+              background-color: transparent;
+              padding: 10px 15px;
+              color: white;
+              border: 2px solid rgb(116, 83, 252);
+              border-radius: 50px;
+              font-size: 15px;
+              margin-right: 10px;
+              transition: all 0.3s;
+              padding: 13px 25px;
+              margin-top: 5px;
+
+
+       }
+
+       .section .sectext .active2 {
+              background-color: rgb(116, 83, 252);
+              color: white;
+              border: 2px solid rgb(116, 83, 252);
+
+
+              padding: 13px 25px;
+
+              border-radius: 30px;
+
+       }
+
+
+       .secimg {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+       }
+
+       .secimg .image img {
+              height: auto;
+              width: 750px;
+              margin: auto;
+
+       }
+
+       .secimg .imgbot {
+              text-align: center;
+              margin-top: 20px;
+       }
+
+       .subsec .gallery {
+              display: flex;
+              flex-wrap: wrap;
+              /* justify-content: space-evenly; */
+              margin-top: 70px;
+
+       }
+
+       .subsec .gallery .gal1 {
+              height: 170px;
+              width: 200px;
+              background-color: rgb(40, 43, 47);
+              border-radius: 20px;
+              border: 1px solid rgb(85, 84, 84);
+              text-align: center;
+              margin: 0px 5px;
+              /* display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       justify-content: space-evenly; */
+       }
+      
+
+}
+
+section {
+       background: url(/dark-bg.jpg) no-repeat center center/cover;
+       width: 100%;
+       height: 3750px;
+
+}
+
+.subsec {
+
+       /* padding-top: 50px; */
+       padding: 50px 100px 0px 100px;
+}
+
+.line {
+       background-color: rgb(116, 83, 252);
+       height: 2px;
+       width: 100px;
+       margin: auto;
+       margin-top: 70px;
+
+}
+
+.subsec h1 {
+       text-align: center;
+       color: white;
+       font-size: 33px;
+       margin-top: 30px;
+}
+
+.subsec h1 em {
+       font-style: normal;
+       color: rgb(116, 83, 252);
+}
+
+.subsec .gallery {
+       display: flex;
+       /* flex-wrap: wrap; */
+       justify-content: center;
+       /* justify-content: space-evenly; */
+       margin-top: 70px;
+
+}
+
+.subsec .gallery .gal1 {
+       height: 170px;
+       width: 200px;
+       background-color: rgb(40, 43, 47);
+       border-radius: 20px;
+       border: 1px solid rgb(85, 84, 84);
+       text-align: center;
+       margin: 20px 20px;
+       /* display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       justify-content: space-evenly; */
+}
+
+.subsec .gallery .gal1 .imggal {
+       background-color: white;
+       padding: 15px;
+       border-radius: 50%;
+       text-align: center;
+       line-height: 0;
+       width: 60px;
+       margin: auto;
+       margin-top: 30px;
+}
+
+.subsec .gallery .gal1 img {
+       line-height: 50px;
+
+
+       /* padding: 17px; */
+
+
+}
+
+.subsec .gallery .gal1 h3 {
+       color: white;
+       width: 100%;
+       margin: auto;
+       margin-top: 15px;
+}
+
+.subsec .gallery .gal1 a {}
+
+.subsec .gallery .gal1 a i {
+       background-color: white;
+       font-size: 15px;
+       padding: 15px 20px;
+       border-radius: 50px;
+       color: rgb(116, 83, 252);
+       margin: 5px;
+       margin-top: 20px;
+       display: none;
+
+
+
+}
+
+.subsec .gallery .gal1:hover i {
+       display: inline-block;
+
+
+
+}
+
+.subsec .gallery .gal1 a i:hover {
+       background-color: rgb(116, 83, 252);
+       color: white;
+}
+
+.collectgal .line {
+       margin-top: 150px;
+}
+
+.subimg {
+       margin-top: 100px;
+       display: flex;
+       justify-content: center;
+}
+
+.subimg .mutant {
+       height: 490px;
+       width: 450px;
+       background-color: rgb(40, 43, 47);
+
+       margin: 0px 20px;
+       position: relative;
+
+}
+
+.subimg .mutant .up {
+       height: 60%;
+}
+
+.subimg .mutant .up img {
+       border-top-right-radius: 20px;
+       border-top-left-radius: 20px;
+       height: 100%;
+       width: 100%;
+
+}
+
+.subimg .mutant .down {
+       border: 1px solid rgb(67, 67, 67);
+       height: 40%;
+       border-bottom-right-radius: 20px;
+       border-bottom-left-radius: 20px;
+       padding: 30px;
+}
+
+.subimg .mutant .down h2 {
+       color: white;
+       border-bottom: 1px solid rgb(79, 78, 78);
+       padding-bottom: 1rem;
+}
+
+.subimg .mutant .down .para {
+       display: flex;
+       justify-content: space-between;
+       margin: 20px 0px 10px 0px;
+}
+
+.subimg .mutant .down .para p {
+       color: white;
+}
+
+.subimg .mutant .down .price {
+       display: flex;
+       justify-content: space-between;
+
+}
+
+.subimg .mutant .down .price p {
+       font-size: 1.5rem;
+       color: white;
+
+}
+
+.subimg .mutant .down .bottom {
+       background-color: rgb(116, 83, 252);
+       color: white;
+       border-radius: 25px;
+
+       padding: 15px 25px;
+       left: 12%;
+       text-align: center;
+       width: 70%;
+       /* margin: 30px; */
+       position: absolute;
+       bottom: -25px;
+}
+
+.subimg .mutant .down .bottom:hover {
+       background-color: white;
+       color: rgb(116, 83, 252);
+       transition: all 0.3s;
+
+}
+
+.subimg .mutant a i {
+       background-color: white;
+       padding: 20px 23px;
+       border-radius: 50%;
+       position: absolute;
+       left: -28px;
+       top: 45%;
+
+}
+
+.subimg .mutant .up a .fa-angle-right {
+       background-color: white;
+       position: absolute;
+       /* right: 28px; */
+       /* display: none; */
+
+       left: 93%;
+}
+
+.subimg .mutant:first-child .up a .fa-angle-right {
+       display: none;
+}
+
+.purp {
+       height: 600px;
+       width: 100%;
+       background: url(/main-bg.jpg)no-repeat center center/cover;
+       /* background-color: #7453fc;
+      po */
+       margin-top: 170px;
+       /* position: absolute; */
+       padding: 50px 100px 0px 100px;
+
+
+}
+
+.purp .linee {
+
+       background-color: white;
+       height: 3px;
+       width: 100px;
+       /* margin: auto; */
+       margin-top: 70px;
+       /* float: left; */
+       clear: both;
+       /* display: block; */
+
+
+}
+
+.purp .mainpurp {
+       display: flex;
+       justify-content: space-between;
+}
+
+.purp .mainpurp .purpleft h1 {
+       color: white;
+       margin-top: 30px;
+       font-size: 25px;
+}
+
+.purp .mainpurp .purpright button {
+       background-color: transparent;
+       padding: 10px 15px;
+       color: white;
+       /* border: 2px solid rgb(116,83,252); */
+       background-color: rgb(116, 83, 252);
+       border-radius: 50px;
+       font-size: 15px;
+       margin-right: 10px;
+       transition: all 0.3s;
+       padding: 13px 25px;
+}
+
+.purp .mainpurp .purpright button:hover {
+       background-color: white;
+       color: rgb(116, 83, 252);
+}
+
+.marketsection {
+       display: flex;
+       /* justify-content: center;/ */
+
+
+}
+
+.marketsection .item1 {
+       /* background-color: yellow; */
+       height: 230px;
+       width: 100%;
+       margin-right: 15px;
+       margin-top: 50px;
+       border-right: 1px solid rgb(170, 170, 170);
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+}
+
+.marketsection .item1:last-child {
+       border: none;
+}
+
+.marketsection .item1 .markimg {
+       background-color: white;
+       padding: 15px;
+       border-radius: 50%;
+       text-align: center;
+       line-height: 0;
+       width: 60px;
+       /* margin: auto; */
+       /* margin-top: 30px; */
+
+
+}
+
+.marketsection .item1 .markimg img {
+       line-height: 50px;
+
+
+}
+
+.marketsection .item1 h2 {
+       color: white;
+       margin-top: 30px;
+       margin-bottom: 20px;
+
+}
+
+.marketsection .item1 p {
+       color: white;
+
+
+
+}
+
+@media (max-width:990px) {
+       .purp .mainpurp .purpleft h1 {
+              color: white;
+              margin-top: 30px;
+              font-size: 25px;
+              text-align: center;
+              margin-bottom: 10px;
+       }
+
+       .marketsection {
+              display: flex;
+              /* justify-content: center;/ */
+              flex-direction: column;
+              align-items: center;
+
+
+       }
+
+       .purp .mainpurp {
+              display: flex;
+              flex-direction: column;
+              /* justify-content: space-between; */
+              /* justify-content: center; */
+              align-items: center;
+       }
+
+       .marketsection .item1 {
+              /* background-color: yellow; */
+              height: 200px;
+              width: 100%;
+              margin-right: 15px;
+              margin-top: 40px;
+              border-right: none;
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+       }
+
+       .purp .linee {
+
+              background-color: white;
+              height: 3px;
+              width: 100px;
+              margin: auto;
+              margin-top: 70px;
+              /* float: left; */
+              clear: both;
+              /* display: block; */
+
+
+       }
+
+       .marketsection .item1 p {
+              color: white;
+              text-align: center;
+              width: 70%;
+
+
+       }
+
+       .purp {
+              height: 1200px;
+              width: 100%;
+              background: url(/main-bg.jpg)no-repeat center center/cover;
+              /* background-color: #7453fc;
+             po */
+              margin-top: 170px;
+              /* position: absolute; */
+              padding: 50px 100px 0px 100px;
+
+
+       }
+}
+
+@media (max-width:730px) {
+       .purp {
+              height: 1200px;
+              width: 100%;
+              background: url(/main-bg.jpg)no-repeat center center/cover;
+              /* background-color: #7453fc;
+             po */
+              margin-top: 170px;
+              /* position: absolute; */
+              padding: 50px 30px 0px 30px;
+
+
+       }
+
+       .marketsection .item1 {
+              /* background-color: yellow; */
+              height: 200px;
+              width: 100%;
+              margin-right: 15px;
+              margin-top: 50px;
+              border-right: none;
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+       }
+
+       .marketsection .item1 h2 {
+              color: white;
+              margin-top: 10px;
+              margin-bottom: 20px;
+
+
+       }
+
+       .marketsection .item1 h2 {
+              text-align: justify;
+       }
+
+}
+
+.botsec {
+       padding: 50px 100px 0px 100px;
+
+}
+
+.botsec .linee {
+       background-color: rgb(116, 83, 252);
+       height: 3px;
+       width: 100px;
+       /* margin: auto; */
+       margin-top: 70px;
+       /* float: left; */
+       clear: both;
+       /* display: block; */
+
+
+}
+
+.botsec .mainskel .mainsleft h2 {
+       color: white;
+       margin-top: 30px;
+       font-size: 33px;
+}
+
+.botsec .mainskel .mainsleft h2 em {
+       color: rgb(116, 83, 252);
+       font-style: normal;
+}
+
+.botsec .mainskel {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 100px;
+}
+
+.botsec .mainskel .mainsright ul {
+       display: flex;
+       flex-wrap: wrap;
+
+}
+
+.botsec .mainskel .mainsright ul li {
+       list-style: none;
+}
+
+.botsec .mainskel .mainsright ul li a {
+       color: white;
+       padding: 10px 15px;
+       border-radius: 20px;
+       margin: 0px 5px;
+}
+
+.botsec .mainskel .mainsright ul li .act {
+       background-color: rgb(116, 83, 252);
+}
+
+.botsec .mainskel .mainsright ul li a:hover {
+       background-color: rgb(116, 83, 252);
+}
+
+.subskel {
+       display: flex;
+       margin-top: 40px;
+
+}
+
+.subskel .skull1 {
+       height: auto;
+
+       width: 50%;
+
+       border-radius: 20px;
+       margin: 0px 20px;
+       padding: 30px 25px;
+       border: 1px solid rgb(84, 84, 84);
+       display: flex;
+       background-color: rgb(40, 43, 47);
+}
+
+.subskel .skull1 .skullimg:hover img {
+       transform: scale(1.1);
+
+
+}
+
+.subskel .skull1 .skullimg {
+       width: 35%;
+
+       overflow: hidden;
+       border-radius: 20px;
+
+}
+
+.subskel .skull1 .skullimg img {
+       height: 100%;
+       width: 100%;
+       border-radius: 20px;
+       transition: all 0.3s;
+       vertical-align: middle;
+
+}
+
+.subskel .skull1 .bottext {
+       /* display: flex;
+       flex-direction: column; */
+       /* background-color: yellow; */
+       width: 65%;
+       padding-left: 30px;
+       padding-right: 10px;
+}
+
+.subskel .skull1 .bottext h4 {
+       color: white;
+       font-size: 20px;
+       /* margin-left: 20px; */
+       margin-bottom: 20px;
+}
+
+.subskel .skull1 .bottext .logo {
+       display: flex;
+       margin-top: 10px;
+       padding-bottom: 30px;
+       border-bottom: 1px solid rgb(75, 74, 74);
+       margin-bottom: 30px;
+
+}
+
+.subskel .skull1 .bottext .logo img {
+       border-radius: 50%;
+       width: 60px;
+       margin-right: 25px;
+}
+
+.subskel .skull1 .bottext .logo .logotext {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       /* align-items: center; */
+}
+
+.subskel .skull1 .bottext .logo .logotext h4 {
+       color: white;
+       font-size: 15px;
+       /* margin-left: 20px; */
+       margin-bottom: 0px;
+}
+
+.subskel .skull1 .bottext .logo .logotext a {
+       color: rgb(116, 83, 252);
+       font-weight: 600;
+}
+
+.subskel .skull1 .bottext .start {
+       float: left;
+       color: white;
+
+}
+
+.subskel .skull1 .bottext .start strong {
+       font-size: 20px;
+}
+
+.subskel .skull1 .bottext .start em {
+       font-style: normal;
+}
+
+.subskel .skull1 .bottext .end {
+       text-align: right;
+       float: right;
+       color: white;
+
+}
+
+.subskel .skull1 .bottext .end strong {
+       font-size: 20px;
+}
+
+.subskel .skull1 .bottext .end em {
+       font-style: normal;
+}
+
+.subskel .skull1 .bottext .view {
+       clear: both;
+       display: block;
+       padding-top: 50px;
+}
+
+.subskel .skull1 .bottext .view a {
+
+       border-bottom: 1px solid rgb(116, 83, 252);
+       padding: 2px;
+       color: rgb(116, 83, 252);
+       font-weight: 600;
+
+}
+
+.footer {
+       background: url(/main-bg.jpg);
+       height: 90px;
+       text-align: center;
+       color: white;
+       line-height: 90px;
+}
+
+@media(max-width:1400px) {
+       section{
+              height: 4500px;
+       }
+
+       .subskel {
+              display: flex;
+              margin-top: 0px;
+              flex-direction: column;
+              align-items: center;
+       }
+
+       .subskel .skull1 {
+
+              width: 700px;height: 400px;
+
+              border-radius: 20px;
+              margin: 20px 20px;
+              padding: 30px 25px;
+              border: 1px solid rgb(84, 84, 84);
+              display: flex;
+              background-color: rgb(40, 43, 47);
+       }
+       .mainskel{
+              flex-direction: column;
+              align-items: center;
+       }
+       .botsec .linee {
+              background-color: rgb(116, 83, 252);
+              height: 3px;
+              width: 100px;
+              margin: auto;
+              margin-top: 70px;
+              /* float: left; */
+              clear: both;
+              /* display: block; */
+       
+       
+       }
+       
+       .botsec .mainskel .mainsleft h2 {
+              color: white;
+              margin-top: 30px;
+              font-size: 33px;
+              margin-bottom: 50px;
+       }
+       
+       .botsec .mainskel .mainsleft h2 em {
+              color: rgb(116, 83, 252);
+              font-style: normal;
+       }
+       
+       .botsec .mainskel {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 100px;
+       }
+       
+       .botsec .mainskel .mainsright ul {
+              display: flex;
+       
+       }
+      .delete{
+       display: none;
+      }
+      .botsec {
+       padding: 50px 50px 0px 50px;
+
+}
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1400px) {
+       .subimg .mutant:nth-child(2) {
+              display: none;
+       }
+
+       .subsec {
+
+              /* padding-top: 50px; */
+              padding: 50px 50px 0px 50px;
+       }
+       section{
+              height: 5000px;
+       }
+
+}
+
+@media (max-width:900px) {
+       .subimg .mutant:last-child {
+              display: none;
+       }
+
+       .subimg .mutant .up a .fa-angle-right {
+              background-color: white;
+              position: absolute;
+              /* right: 28px; */
+              display: inline-block;
+
+              left: 93%;
+       }
+
+       .subimg .mutant:first-child .up a .fa-angle-right {
+              display: inline-block;
+       }
+
+}
+
+
+
+@media (min-width:850px) and (max-width:920px) {
+       .subsec .gallery .gal1 {
+              height: 170px;
+              width: 40%;
+              background-color: rgb(40, 43, 47);
+              border-radius: 20px;
+              border: 1px solid rgb(85, 84, 84);
+              text-align: center;
+              margin: 20px 20px;
+              /* display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              justify-content: space-evenly; */
+       } .subskel{
+              height: 100%;
+             }
+
+}
+
+
+
+
+@media (min-width:701px) and (max-width:850px) {
+       .main {
+              background: url(/banner-bg.jpg) no-repeat center center/cover;
+              background-color: aquamarine;
+              height: 1300px;
+              width: 100%;
+              padding: 0px;
+
+              /* padding: 30px 120px; */
+
+       }
+       .botsec .mainskel .mainsright ul li {
+              list-style: none;
+              margin-top: 20px;
+       }
+       .botsec{
+              width: 100%;
+       }
+
+       .secimg .image img {
+              height: auto;
+              width: 650px;
+              margin: auto;
+
+       }
+
+       .section .sectext {
+              width: 100%;
+              margin-top: 0px;
+              padding: 30px;
+
+       }
+
+       .subsec {
+              background: url(/dark-bg.jpg) no-repeat center center/cover;
+              width: 100%;
+              height: 2500px;
+              padding-top: 50px;
+              padding: 50px 10 0px 0px 10 0px;
+       }
+
+       .subsec .gallery {
+              display: flex;
+              /* flex-wrap: wrap; */
+              justify-content: center;
+              /* justify-content: space-evenly; */
+              margin-top: 70px;
+
+       }
+
+       .subsec .gallery .gal1 {
+              height: 170px;
+              width: 40%;
+              background-color: rgb(40, 43, 47);
+              border-radius: 20px;
+              border: 1px solid rgb(85, 84, 84);
+              text-align: center;
+              margin: 20px 20px;
+              /* display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              justify-content: space-evenly; */
+       }
+
+       .navbar img {
+              height: 55px;
+       }
+      
+      section{
+       height: 6000px;
+      }
+      .subskel{
+       height: 100%;
+      }
+
+}
+
+@media (min-width:601px) and (max-width:700px) {
+       .main {
+              background: url(/banner-bg.jpg) no-repeat center center/cover;
+              background-color: aquamarine;
+              height: 1450px;
+              width: 100%;
+              padding: 0px;
+
+              /* padding: 30px 120px; */
+
+       }
+
+       .secimg .image {
+              padding: 5px;
+       }
+
+       .secimg .image img {
+              height: auto;
+              width: 600px;
+              margin: auto;
+
+       }
+
+       .section .sectext h1 {
+              color: white;
+              font-size: 45px;
+              margin-bottom: 30px;
+       }
+
+       .subsec {
+              background: url(/dark-bg.jpg) no-repeat center center/cover;
+              width: 100%;
+              height: 2500px;
+              padding-top: 50px;
+              padding: 20px 50px 0px 50px;
+       }
+
+       .navbar img {
+              height: 50px;
+       }
+
+       section{
+              height: 6300px;
+             }
+             .subskel{
+              height: 100%;
+             }
+
+
+}
+
+@media (max-width:600px) {
+       .navbar {
+              width: 100%;
+              margin: auto;
+              display: flex;
+              justify-content: space-between;
+              padding: 15px 20px;
+              background-color: white;
+              border-radius: 0px;
+              align-items: center;
+
+       }
+       .botsec .mainskel .mainsright ul li {
+              list-style: none;
+              margin-top: 40px;
+       }
+
+       .navbar img {
+              height: 40px;
+       }
+
+       .main {
+              background: url(/banner-bg.jpg) no-repeat center center/cover;
+              background-color: aquamarine;
+              height: 1300px;
+              width: 100%;
+              padding: 0px;
+
+              /* padding: 30px 120px; */
+
+       }
+
+       .section .sectext {
+              width: 100%;
+              margin-top: 0px;
+              padding: 30px;
+
+       }
+
+       .secimg .image {
+              padding: 20px;
+       }
+
+       .secimg .image img {
+              height: auto;
+              width: 100%;
+              margin: auto;
+
+       }
+
+       .section .sectext h1 {
+              color: white;
+              font-size: 40px;
+              margin-bottom: 30px;
+       }
+
+       .subsec .gallery .gal1 {
+              height: 170px;
+              width: 100%;
+              background-color: rgb(40, 43, 47);
+              border-radius: 20px;
+              border: 1px solid rgb(85, 84, 84);
+              text-align: center;
+              margin: 20px 20px;
+              /* display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              justify-content: space-evenly; */
+       }
+
+       .subsec {
+              background: url(/dark-bg.jpg) no-repeat center center/cover;
+              width: 100%;
+              height: 2500px;
+              padding-top: 50px;
+              padding: 20px 10px 0px 10px;
+       }
+
+       .subimg .mutant .down h2 {
+              color: white;
+              border-bottom: 1px solid rgb(79, 78, 78);
+              padding-bottom: 0.7rem;
+       }
+
+       .subimg .mutant .down {
+              border: 1px solid rgb(67, 67, 67);
+              height: 40%;
+              border-bottom-right-radius: 20px;
+              border-bottom-left-radius: 20px;
+              padding: 15px;
+       }
+       section{
+              height: 6200px;
+             }
+             .skull1{
+              width: 100%;
+             }
+             .subskel{
+              height: 100%;
+             }
+}
